@@ -75,6 +75,9 @@ export default class ClampLines extends PureComponent {
 
   action() {
     if (this.watch) {
+      if(this.lineHeight <= 1){
+        this.lineHeight = this.element.clientHeight + 1;
+      }
       this.setState({
         noClamp: false,
       });
@@ -109,7 +112,9 @@ export default class ClampLines extends PureComponent {
 
       this.moveMarkers(maxHeight);
     }
-
+    if(this.onClamp){
+      this.onClamp()
+    }
     this.element.innerText =
       this.original.slice(0, this.middle - 5) + this.getEllipsis();
     this.setState({
