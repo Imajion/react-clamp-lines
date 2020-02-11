@@ -1,10 +1,10 @@
 {
-  "name": "react-clamp-lines",
-  "version": "3.0.2",
+  "name": "react-clamp-lines-imajion",
+  "version": "3.0.3",
   "description": "Responsive and accessible clamping component with Read more/Read less buttons built for React.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "files": [
-    "lib/**/*"
+    "src/**/*"
   ],
   "scripts": {
     "build": "webpack"
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoltantothcom/react-clamp-lines.git"
+    "url": "https://github.com/imajion/react-clamp-lines.git"
   },
   "author": "Zoltan Toth",
   "license": "Unlicense",
