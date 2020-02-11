@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class ClampLines extends PureComponent {
   constructor(props) {
     super(props);
-
+    this.onClamp = props.onClamp();
     this.element = null;
     this.original = props.text;
     this.watch = true;
